@@ -11,7 +11,7 @@ object SquerylBuild extends Build {
       description := "A Scala ORM and DSL for talking with Databases using minimum verbosity and maximum type safety",
       organization := "org.squeryl",
       version := "0.9.6-M1",
-      scalacOptions += "-Xplugin:/home/vlad/scala-projects/printPlugin/target/scala-2.10/printplugin_2.10-1.0.jar",
+      //scalacOptions += "-Xplugin:/home/vlad/scala-projects/printPlugin/target/scala-2.10/printplugin_2.10-1.0.jar",
       javacOptions := Seq("-source", "1.6", "-target", "1.6"),
   	  version <<= version { v => //only release *if* -Drelease=true is passed to JVM
   	  	val release = Option(System.getProperty("release")) == Some("true")
